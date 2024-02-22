@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="expodr3.css">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Contacteer</title>
+</head>
+<body>
+<main>
+    <h1>Contacteer ons voor een demo!</h1>
+    <p>Een demo boeken kan iedere zaterdag vanaf 2 maart 20244. De demo's gaan door op een locatie naar wens (keuze uit vier locaties, twee in Belgie en twee in Nederland). </p>
+<form method="post" action="mailto:info@diving-torch.be" enctype="text/plain" target="_blank" >
+<label for="naam">Naam <b>*</b></label>
+    <input type="text" id="naam" name="naam" required>
+    <br>
+    <label for="email">E-mailadres<b>*</b></label>
+    <input type="text" id="email" name="email" required placeholder="email@adres.be">
+    <br>
+    <label for="datum">Datum <b>*</b></label>
+    <input type="date" id="datum" name="datum" required>
+    <br>
+    <label>Type</label>
+    <input type="radio" value="DTR-10" name="type" id="DTR-10">
+    <label for="DTR-10" class="radio">DTR-10</label>
+    <input type="radio" value="DTR-30" name="type" id="DTR-30">
+    <label for="DTR-30" class="radio">DTR-30</label>
+    <input type="radio" value="DTR-60" name="type" id="DTR-60">
+    <label for="DTR-60" class="radio">DTR-60</label>
+    <br>
+    <label for="locatie">Locatie</label>
+    <input type="list" name="locatie" id="locatie">
+    <datalist>
+        <option label="BE-ESNEUX, La Gombe" value="Esneux (BE)"> </option>
+        <option label="BE-MOL, Zilvermeer" value="Mol (BE)"> </option>
+        <option label="NL-PANHEEL, Boschmolenplas" value="Panheel (NL)"> </option>
+        <option label="NL-THORN, GroteHegge" value="Thorn (NL)"></option>
+    </datalist>
+    <br>
+    <label for="opmerking" >Opmerkingen of vragen?</label>
+    <br>
+    <textarea name="opmeerking" id="opmerking" wrap="hard"> </textarea>
+    <br>
+    <input type="submit" value="Demo boeken">
+
+</form>
+</main>
+</body>
+</html>

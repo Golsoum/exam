@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Arial, sans-serif;
+    max-width: 120rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: white;
+    border-bottom: 0.2rem solid #e40515;
+}
+nav .nav-container  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav .nav-container li {
+    padding: 2rem 3rem;
+}
+nav .nav-container li a{
+    color: black;
+
+    text-decoration: none;}
+nav .nav-container li a:hover,
+nav .nav-container li .active {
+    color: #e40515;
+}
+nav .nav-shop a{
+    color: white;
+    background-color: #e40515;
+    padding: 2rem 3rem;
+    text-decoration: none;
+}
+nav .nav-shop a:hover{
+    color: #e40515;
+    background-color: white;
+}
+header {
+    background-image: url("assets/header.jpg");
+    height: 25rem;
+    margin: 5.25rem;
+    background-size: cover;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    text-transform: lowercase;
+    padding: 1rem;
+    border: 0.25rem solid white;
+}
+main {
+    width: 80rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+main section h1 {
+    margin: 3rem 0;
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: black;
+    text-align: center;
+}
+main section h1 span {
+    color: #e40515;
+}main section p {
+    padding-bottom: 1.5rem;
+
+ }
+.main_srction_foto {display: flex;
+justify-content: space-around;
+}
+.main_srction_foto img {
+    border:0.2rem solid #e40515;
+}
+.main_srction_foto p {
+    text-align: center;
+}
+footer {
+    background-color: #e40515;
+    padding: 2rem;
+
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media screen and(max-width: 80rem) {
+nav {border-bottom: 0.2rem solid black;
+}
+.nav-shop a {
+    background-color: black;
+}
+header {
+    height: 15rem;
+}
+main {
+    width: 100%;
+    padding: 0 1rem;
+}
+main article{ display: flex;
+    flex-direction: column;
+    border: 0.2rem solid black;
+}
+footer {
+    background-color: black;
+}
+}
+@media screen and(max-width: 38rem) {
+    nav {
+        display: none;
+    }
+    header {
+        margin: 0;
+    }
+}

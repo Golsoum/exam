@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+main {
+    width: 55rem;
+    margin: 2rem auto;
+}
+main p {
+    margin-bottom: 2rem;
+}
+form {
+    width: 50rem;
+
+}
+form label {
+    width: 210rem;
+    margin: 1rem;
+}
+form input {
+    width: 19rem;
+    padding: 0.5rem;
+    border: 1px solid #e40515;
+}
+form .radio {
+    width: 1rem;
+    padding: 0.5rem;
+}
+main label[type="radio"] {width: 5rem;}
+main form input[type="submit"] {
+    padding: 0.5rem;
+    color: white;
+    background-color: #e40515;
+    width: 19rem;
